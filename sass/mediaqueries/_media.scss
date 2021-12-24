@@ -1,0 +1,46 @@
+@media (min-width: 769px) {
+
+    header{
+        .search-header{
+            display: block;
+            width: 40%;
+            input{
+                background-color: $header-color;
+                border-radius: 5px;
+                border: 0.4px solid $border-color;
+                padding: 0.5rem;
+                width: 100%;
+            }
+        }
+    }
+
+    main{
+        section{
+            display: grid;
+            column-gap: 10% ;
+            grid-template-columns: 1fr 0.7fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "main-head aside"
+                "main aside";
+
+            ul{
+                grid-area: main-head;
+            }
+
+            article{
+                grid-area: main;
+            }
+
+            .suggestions-profile{
+                display: block;
+                grid-area: aside;
+                justify-self: center;
+                width: 90%;
+            }  
+
+        }
+    }
+
+      
+}
